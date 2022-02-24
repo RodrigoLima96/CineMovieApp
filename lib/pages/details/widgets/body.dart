@@ -1,5 +1,7 @@
+import 'package:cinemovie_app/pages/details/widgets/buy_button.dart';
 import 'package:flutter/material.dart';
 import '/models/movie.dart';
+import 'comments.dart';
 import 'image_and_icons.dart';
 import 'movie_session.dart';
 
@@ -15,6 +17,8 @@ class DetailsBody extends StatelessWidget {
         children: [
           ImageAndIcons(movie: movie),
           const MovieSession(),
+          const BuyButton(),
+          const Comments(),
         ],
       ),
     );
