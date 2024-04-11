@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '/constants.dart';
 
 class AgeRatingCard extends StatelessWidget {
-  const AgeRatingCard({Key? key, required this.age}) : super(key: key);
+  const AgeRatingCard({super.key, required this.age});
 
   final int age;
 

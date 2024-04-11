@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '/constants.dart';
 
 class SessionTitle extends StatelessWidget {
-  const SessionTitle({Key? key, required this.title}) : super(key: key);
+  const SessionTitle({super.key, required this.title});
 
   final String title;
 

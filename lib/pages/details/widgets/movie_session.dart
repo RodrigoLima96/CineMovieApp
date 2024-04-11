@@ -3,13 +3,13 @@ import '/constants.dart';
 import '/repository/session_repository.dart';
 
 class MovieSession extends StatefulWidget {
-  const MovieSession({Key? key}) : super(key: key);
+  const MovieSession({super.key});
 
   @override
-  _MovieSessionState createState() => _MovieSessionState();
+  MovieSessionState createState() => MovieSessionState();
 }
 
-class _MovieSessionState extends State<MovieSession> {
+class MovieSessionState extends State<MovieSession> {
   var session = SessionRepository().session;
 
   final List<bool> isSelected = List.generate(7, (_) => false);
@@ -38,17 +38,6 @@ class _MovieSessionState extends State<MovieSession> {
             padding:
                 const EdgeInsets.symmetric(horizontal: kDefaultPadding + 5),
             child: ToggleButtons(
-              children: [
-                for (var i = 0; i < session.length; i++)
-                  Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: kDefaultPadding - 10),
-                    child: Text(
-                      session[i].time,
-                      style: textStyle.copyWith(fontSize: 16),
-                    ),
-                  ),
-              ],
               selectedBorderColor: Colors.grey,
               fillColor: Colors.grey,
               borderRadius: const BorderRadius.all(Radius.circular(5)),
@@ -69,6 +58,17 @@ class _MovieSessionState extends State<MovieSession> {
                 });
               },
               isSelected: isSelected,
+              children: [
+                for (var i = 0; i < session.length; i++)
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: kDefaultPadding - 10),
+                    child: Text(
+                      session[i].time,
+                      style: textStyle.copyWith(fontSize: 16),
+                    ),
+                  ),
+              ],
             ),
           ),
         ),

@@ -3,7 +3,7 @@ import '/repository/movies_repository.dart';
 import 'movie_card.dart';
 
 class ComingSoonMovies extends StatelessWidget {
-  const ComingSoonMovies({Key? key}) : super(key: key);
+  const ComingSoonMovies({super.key});
 
   @override
   Widget build(BuildContext context) {

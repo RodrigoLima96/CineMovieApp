@@ -5,7 +5,7 @@ import 'age_rating_card.dart';
 import 'movie_detail_card.dart';
 
 class ImageAndIcons extends StatelessWidget {
-  const ImageAndIcons({Key? key, required this.movie}) : super(key: key);
+  const ImageAndIcons({super.key, required this.movie});
 
   final Movie movie;
 

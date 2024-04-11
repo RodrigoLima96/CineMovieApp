@@ -3,11 +3,11 @@ import '/constants.dart';
 
 class MovieCard extends StatelessWidget {
   const MovieCard({
-    Key? key,
+    super.key,
     required this.image,
     required this.title,
     required this.press,
-  }) : super(key: key);
+  });
 
   final String image, title;
   final Function press;

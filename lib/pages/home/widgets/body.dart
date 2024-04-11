@@ -5,13 +5,13 @@ import 'movies_on_teather.dart';
 import 'session_title.dart';
 
 class HomeBody extends StatelessWidget {
-  const HomeBody({Key? key}) : super(key: key);
+  const HomeBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return const SingleChildScrollView(
       child: Column(
-        children: const [
+        children: [
           HeaderSearch(),
           SessionTitle(title: 'On Teather'),
           MoviesOnTeather(),

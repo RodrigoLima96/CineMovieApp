@@ -4,7 +4,7 @@ import '/repository/movies_repository.dart';
 import 'movie_card.dart';
 
 class MoviesOnTeather extends StatelessWidget {
-  const MoviesOnTeather({Key? key}) : super(key: key);
+  const MoviesOnTeather({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '/constants.dart';
 
 class BuyButton extends StatelessWidget {
-  const BuyButton({Key? key}) : super(key: key);
+  const BuyButton({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class BuyButton extends StatelessWidget {
       ),
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          primary: Colors.blue.shade300,
+          backgroundColor: Colors.blue.shade300,
         ),
         onPressed: () {},
         child: Text(

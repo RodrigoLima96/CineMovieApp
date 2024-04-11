@@ -1,10 +1,10 @@
-import 'package:cinemovie_app/pages/details/widgets/comment_card.dart';
 import 'package:flutter/material.dart';
+import 'package:teste/pages/details/widgets/comment_card.dart';
 import '/constants.dart';
 import '/repository/comments_repository.dart';
 
 class Comments extends StatelessWidget {
-  const Comments({Key? key}) : super(key: key);
+  const Comments({super.key});
 
   @override
   Widget build(BuildContext context) {

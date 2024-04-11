@@ -3,9 +3,8 @@ import 'package:flutter/material.dart';
 import '/constants.dart';
 
 class HomeAppBar extends AppBar {
-  HomeAppBar({Key? key})
+  HomeAppBar({super.key})
       : super(
-          key: key,
           backgroundColor: kPrimaryColor,
           elevation: 0,
           leading: IconButton(

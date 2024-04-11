@@ -3,13 +3,12 @@ import '/constants.dart';
 
 class MovieDetailCard extends StatelessWidget {
   const MovieDetailCard(
-      {Key? key,
+      {super.key,
       required this.icon,
       required this.details,
       required this.color,
       required this.width,
-      required this.padding})
-      : super(key: key);
+      required this.padding});
 
   final String icon;
   final List<String> details;

@@ -3,13 +3,13 @@ import '/constants.dart';
 
 class CommentsCard extends StatelessWidget {
   const CommentsCard({
-    Key? key,
+    super.key,
     required this.avatar,
     required this.name,
     required this.date,
     required this.rating,
     required this.review,
-  }) : super(key: key);
+  });
 
   final String avatar;
   final String name;

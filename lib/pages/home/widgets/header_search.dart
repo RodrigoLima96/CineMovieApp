@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '/constants.dart';
 
 class HeaderSearch extends StatelessWidget {
-  const HeaderSearch({Key? key}) : super(key: key);
+  const HeaderSearch({super.key});
 
   @override
   Widget build(BuildContext context) {
