@@ -1,5 +1,5 @@
+import 'package:cine_movie_app/pages/home/widgets/body.dart';
 import 'package:flutter/material.dart';
-import 'package:teste/pages/home/widgets/body.dart';
 import 'widgets/app_bar.dart';
 
 class HomePage extends StatelessWidget {

@@ -1,5 +1,5 @@
+import 'package:cine_movie_app/pages/details/widgets/buy_button.dart';
 import 'package:flutter/material.dart';
-import 'package:teste/pages/details/widgets/buy_button.dart';
 import '/models/movie.dart';
 import 'comments.dart';
 import 'image_and_icons.dart';

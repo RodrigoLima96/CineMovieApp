@@ -1,5 +1,5 @@
+import 'package:cine_movie_app/pages/details/widgets/comment_card.dart';
 import 'package:flutter/material.dart';
-import 'package:teste/pages/details/widgets/comment_card.dart';
 import '/constants.dart';
 import '/repository/comments_repository.dart';
 
